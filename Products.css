@@ -1,0 +1,578 @@
+/* Importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(Pictures/WAll.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+  
+.main-wrapper {
+    max-width: 1250px; /* or whatever size feels right */
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 100px;
+    
+  }
+
+
+  .card-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+    overflow: hidden;
+  }
+
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.Bleach {
+    color: #882485;
+    background: #872DF5;
+}
+
+.card-list .card-link .badge.Dog {
+    color: #885A08;
+    background: #cab6f0;
+}
+
+.card-list .card-link .badge.Bleach {
+    color: #336613;
+    background: #ccbeeb;
+}
+
+
+.card-list .card-link .badge.Soap {
+    color: #a763ec;
+    background: #bee9d3;
+}
+
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 10px 10px 25px 10px;
+        padding: 20px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+
+    .card-list .card-link .badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1rem;
+    }
+
+    .header-section p {
+        font-size: 14px;
+    }
+}
+
+.card-list .card-item .card-link {
+    padding: 16px;
+    font-size: 0.95rem;
+}
+
+.header-section {
+    
+    color:black;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.header-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.header-section a {
+    color: #4aa7e3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c9302c;
+}
+
+/* Footer Styling */
+.F {
+    text-align: center; /* Centers the text horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    font-size: 1.2em; /* Adjust font size */
+    color: black; /* Footer text color */
+    font-family: 'Times New Roman', Times, serif; /* Ensure consistent font */
+}
+
+/* Responsive adjustments for footer */
+@media screen and (max-width: 768px) {
+    .F {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Adjust font size for better readability */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .F {
+        padding: 10px; /* Further adjust padding for smaller screens */
+        font-size: 0.9em; /* Further reduce font size for smaller screens */
+    }
+}
+
+/* New wrapper to center just the button */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px; /* Space between title and button */
+}
+
+/* Original dropdown container - now centered */
+.dropdown-container {
+    position: relative;
+    display: inline-block; /* Maintains natural button width */
+}
+
+/* Centered dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 250px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+/* Keep existing card styles */
+.card-item {
+    /* Your existing card styles */
+    overflow: visible !important; /* For swiper */
+}
+
+.card-button {
+    /* Your existing button styles */
+    transition: transform 0.2s ease;
+}
+
+.card-button:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+.dropdown-container.active .dropdown-content {
+    display: block;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ===== DROPDOWN FIXES - SOLID VERSION ===== */
+/* 1. Fix swiper container clipping */
+.swiper, .swiper-container {
+    overflow: visible !important;
+}
+
+.swiper-wrapper {
+    overflow: visible !important;
+} 
+
+
+/* 2. Button and dropdown container */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* 3. Solid dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 60px);
+    min-width: 220px;
+    background: white; /* Solid white background */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    padding: 15px;
+    z-index: 100;
+    margin-top: 8px;
+    border: 1px solid #eee;
+    opacity: 1 !important; /* Force full opacity */
+}
+
+/* 4. Remove all transparency effects */
+.dropdown-content p {
+    color: #5372F0;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    opacity: 1 !important;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    opacity: 1 !important;
+}
+
+.price-list li {
+    padding: 6px 0;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+    opacity: 1 !important;
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+/* 5. Animation without opacity change */
+@keyframes fadeIn {
+    from { 
+        transform: translateX(-50%) translateY(-10px); 
+    }
+    to { 
+        transform: translateX(-50%) translateY(0); 
+    }
+}
+
+.dropdown-container.active .dropdown-content {
+    display: block;
+    animation: fadeIn 0.25s ease-out;
+}
+
+/* 6. Button adjustments */
+.card-list .card-link .card-button {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-list .card-link:hover .card-button {
+    transform: scale(1.1) rotate(0deg);
+}
+
+/* 7. Card overflow */
+.card-item {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+/* 8. Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+        width: calc(100% + 40px);
+        min-width: 180px;
+        padding: 12px;
+    }
+}
+
+/* Dropdown width that scales with screen size */
+.dropdown-content {
+    /* Base width for mobile */
+    width: 240px;
+    
+    /* Responsive growth */
+    min-width: 240px; /* Minimum width */
+    max-width: 320px; /* Maximum width */
+    
+    /* Scale between 600px and 1200px viewports */
+    @media (min-width: 600px) {
+        width: calc(240px + (100vw - 600px) / 30); /* Gradual increase */
+    }
+    
+    @media (min-width: 1200px) {
+        width: 320px; /* Max out at 320px */
+    }
+    
+    /* Rest of your existing styles... */
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    /* etc... */
+}
+
+/* Fix stacking context issues */
+.main-wrapper {
+    position: relative;
+    z-index: 1; /* Creates new stacking context */
+}
+
+/* Dropdown z-index boost */
+.dropdown-content {
+    z-index: 9999; /* Extremely high value */
+    position: absolute; /* Must be positioned */
+}
+
+/* Ensure swiper elements don't interfere */
+.swiper, .swiper-container, .swiper-wrapper {
+    z-index: auto !important; /* Reset swiper z-index */
+    transform-style: flat; /* Prevents 3D context issues */
+}
+
+/* Add to your existing styles */
+.dropdown-container {
+    position: relative;
+    z-index: 10000; /* Higher than parent */
+    isolation: isolate; /* Creates new stacking context */
+}
+
+.dropdown-content {
+    z-index: 10001; /* Even higher */
+    will-change: transform; /* Helps with rendering */
+}
+
+/* Dropdown Content Text Styles */
+.dropdown-content {
+    /* Center alignment */
+    text-align: center;
+    
+    /* Text sizing */
+    font-size: 1.1rem; /* Increased from default */
+    line-height: 1.6; /* Better readability */
+    
+    /* Existing styles (keep these) */
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px; /* Increased padding for bigger text */
+    /* ... other existing styles ... */
+    z-index: 1000000;
+
+}
+
+/* Price list items */
+.price-list li {
+    font-size: 1rem; /* Larger than before */
+    padding: 10px 0; /* More spacing */
+    margin: 0 auto; /* Center list items */
+    display: block; /* Ensure full width for centering */
+}
+
+/* Description text */
+.dropdown-description {
+    font-size: 1.2rem; /* Even larger for description */
+    margin-bottom: 15px;
+    font-weight: 600; /* Slightly bolder */
+    color: #5372F0; /* Your existing blue color */
+}
+
+/* Button text (if needed) */
+.card-button {
+    font-size: 1.3rem; /* Larger arrow icon */
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+        font-size: 1rem; /* Slightly smaller on mobile */
+        padding: 15px; /* Slightly less padding */
+    }
+    
+    .dropdown-description {
+        font-size: 1.1rem;
+    }
+    
+    .price-list li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Add these to your Products.css file */
+
+/* Fix dropdown visibility */
+.swiper, .swiper-container {
+    overflow: visible !important;
+}
+
+.swiper-wrapper {
+    transform-style: flat;
+    overflow: visible !important;
+}
+
+.swiper-slide {
+    overflow: visible !important;
+    height: auto;
+}
+
+/* Fix arrow rotation and dropdown z-index */
+.card-button {
+    transform: rotate(45deg) !important;
+    transition: all 0.4s ease !important;
+}
+
+.dropdown-content {
+    z-index: 10001;
+    position: absolute;
+    transform: translateX(-50%) translateZ(0); /* Force hardware acceleration */
+}
+
+/* Ensure dropdown stays above other elements */
+.dropdown-container {
+    isolation: isolate;
+    z-index: 10;
+}
+
+.main-wrapper {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.card-wrapper {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+
+
+
