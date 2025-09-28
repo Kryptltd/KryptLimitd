@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Krypt Investments | Quality Cleaning & Hygiene Solutions</title>
+    <meta name="description" content="Explore Krypt Investments' comprehensive range of cleaning and hygiene products including chlorohexidine, bleach, tile cleaner, spirit, calamine, liquid soap, and hand wash.">
+    <link rel="icon" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="/pictures/Krypt logo.png" alt="Krypt Investments" class="logo-icon" style="height: 40px; width: auto;">
+                    <span class="logo-text">Krypt Investments</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="contacts.html" class="nav-link">Contacts</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="contact-info">
+                        <span>📞 <a href="tel:+256772316316">+256 772 316 316</a></span>
+                    </div>
+                    <a href="contacts.html" class="btn btn-professional">Get Quote</a>
+                </div>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="contacts.html" class="nav-link">Contacts</a>
+                <div class="mobile-contact">
+                    <p>📞 <a href="tel:+256772316316">+256 772 316 316</a></p>
+                    <p>✉️ <a href="mailto:kryptinvestmentsltd@gmail.com">kryptinvestmentsltd@gmail.com</a></p>
+                    <a href="contacts.html" class="btn btn-professional">Get Quote</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Our Products</h1>
+                    <p class="hero-description">
+                        Discover our comprehensive range of high-quality cleaning and hygiene products. 
+                        From medical-grade solutions to everyday cleaning essentials, we have everything you need.
+                    </p>
+                </div>
+                <div class="hero-image" style="height: 350px;">
+                    <img src="/pictures/cover photo.jpg" alt="Products Showcase" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Carousel -->
+    <section class="section">
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-track-container" id="carouselContainer">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Products will be dynamically loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Previous products">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Next products">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+                
+                <!-- Dots Indicator -->
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance -->
+    <section class="section quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality You Can Trust</h2>
+                <p class="section-description">
+                    Every product goes through rigorous quality checks to ensure it meets our high standards
+                </p>
+            </div>
+            
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="quality-icon">🛡️</div>
+                    <h4>Quality Certified</h4>
+                    <p>All products meet international quality standards</p>
+                </div>
+                
+                <div class="quality-item">
+                    <div class="quality-icon">🧪</div>
+                    <h4>Lab Tested</h4>
+                    <p>Rigorous testing ensures product effectiveness</p>
+                </div>
+                
+                <div class="quality-item">
+                    <div class="quality-icon">⭐</div>
+                    <h4>Customer Approved</h4>
+                    <p>Trusted by thousands of satisfied customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>
+                    Join hundreds of satisfied customers who trust Krypt Investments for their 
+                    cleaning and hygiene needs. Get your personalized quote today.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contacts.html" class="btn btn-white">Get Your Quote</a>
+                    <a href="about.html" class="btn btn-outline-white">Learn About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/pictures/Krypt logo.png" alt="Krypt Investments" class="logo-icon" style="height: 40px; width: auto;">
+                        <span>Krypt Investments</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for high-quality cleaning and hygiene products. 
+                        Professional solutions for everyday use.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573217287349" target="_blank" rel="noopener noreferrer">📘</a>
+                        <a href="https://www.instagram.com/kryptlttd/" target="_blank" rel="noopener noreferrer">📷</a>
+                        <a href="https://wa.me/256772316316" target="_blank" rel="noopener noreferrer">💬</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <nav class="footer-nav">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contacts.html">Contacts</a>
+                    </nav>
+                </div>
+
+                <!-- Products -->
+                <div class="footer-section">
+                    <h3>Our Products</h3>
+                    <div class="footer-products">
+                        <span>Chlorohexidine</span>
+                        <span>Bleach</span>
+                        <span>Tile Cleaner</span>
+                        <span>Spirit</span>
+                        <span>Calamine</span>
+                        <span>Liquid Soap</span>
+                        <span>Hand Wash</span>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <p>Call Us</p>
+                                <p><strong><a href="tel:+256772316316">+256 772 316 316</a></strong></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <p>Email</p>
+                                <p><strong><a href="mailto:kryptinvestmentsltd@gmail.com">kryptinvestmentsltd@gmail.com</a></strong></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p>Location</p>
+                                <p><strong>Kampala, Uganda</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Krypt Investments. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Product data with specific sizes for each product
+        const productData = {
+            'Chlorohexidine': {
+                name: 'Chlorohexidine',
+                category: 'Medical',
+                description: 'Medical-grade antiseptic solution for wound care and disinfection. Professional strength formula trusted by healthcare facilities worldwide.',
+                image: '/pictures/Chlorohexidinn.jpg',
+                sizes: [
+                    { size: '1L', price: 'UGX 15,000' },
+                    { size: '5L', price: 'UGX 65,000' },
+                    { size: '20L', price: 'UGX 240,000' }
+                ]
+            },
+            'Bleach': {
+                name: 'Bleach',
+                category: 'Cleaning',
+                description: 'High-strength bleaching solution for deep cleaning and disinfection. Ideal for commercial and residential use.',
+                image: '/pictures/Bleach.jpg',
+                sizes: [
+                    { size: '750ml', price: 'UGX 6,000' },
+                    { size: '5L', price: 'UGX 35,000' },
+                    { size: '20L', price: 'UGX 120,000' }
+                ]
+            },
+            'Tile Cleaner': {
+                name: 'Tile Cleaner',
+                category: 'Cleaning',
+                description: 'Specialized formula for removing tough stains and grime from tiles and grout. Leaves surfaces sparkling clean.',
+                image: '/pictures/Tile clean.jpg',
+                sizes: [
+                    { size: '1L', price: 'UGX 12,000' },
+                    { size: '5L', price: 'UGX 55,000' },
+                    { size: '20L', price: 'UGX 200,000' }
+                ]
+            },
+            'Surgical Spirit': {
+                name: 'Surgical Spirit',
+                category: 'Medical',
+                description: 'High-purity isopropyl alcohol for cleaning and disinfection. Perfect for electronics and medical equipment sanitization.',
+                image: '/pictures/Surgical Spirit.jpg',
+                sizes: [
+                    { size: '200ml', price: 'UGX 5,000' },
+                    { size: '1L', price: 'UGX 18,000' },
+                    { size: '5L', price: 'UGX 80,000' }
+                ]
+            },
+            'Calamine': {
+                name: 'Calamine',
+                category: 'Personal Care',
+                description: 'Soothing calamine lotion for skin irritation and minor skin conditions. Gentle formula suitable for all skin types.',
+                image: '/pictures/Calamine.jpg',
+                sizes: [
+                    { size: '200ml', price: 'UGX 3,500' },
+                    { size: '500ml', price: 'UGX 8,000' }
+                ]
+            },
+            'Liquid Soap': {
+                name: 'Liquid Soap',
+                category: 'Personal Care',
+                description: 'Premium quality liquid soap with moisturizing properties. Available in various fragrances for hand and body washing.',
+                image: '/pictures/Liquid soap.jpg',
+                sizes: [
+                    { size: '1L', price: 'UGX 6,000' },
+                    { size: '5L', price: 'UGX 25,000' },
+                    { size: '20L', price: 'UGX 90,000' }
+                ]
+            },
+            'Hand Wash': {
+                name: 'Hand Wash',
+                category: 'Personal Care',
+                description: 'Antibacterial hand wash with gentle cleansing formula. Effective against germs while being kind to your skin.',
+                image: '/pictures/Hand wash.jpg',
+                sizes: [
+                    { size: '1L', price: 'UGX 7,500' },
+                    { size: '5L', price: 'UGX 32,000' },
+                    { size: '20L', price: 'UGX 110,000' }
+                ]
+            }
+        };
+
+        let carousel = null;
+
+        // Render products
+        function renderProducts() {
+            const track = document.getElementById('carouselTrack');
+            track.innerHTML = '';
+            
+            Object.values(productData).forEach(product => {
+                const productCard = createProductCard(product);
+                track.appendChild(productCard);
+            });
+        }
+
+        // Create product card HTML
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product-card detailed carousel-slide';
+            card.dataset.category = product.category.toLowerCase().replace(' ', '-');
+            
+            // Default to first available size
+            let selectedSize = product.sizes[0];
+            let currentIndex = 0;
+            
+            const sizeOptions = product.sizes.map((sizeOption, index) => 
+                `<option value="${index}" ${index === 0 ? 'selected' : ''}>${sizeOption.size}</option>`
+            ).join('');
+            
+            card.innerHTML = `
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3>${product.name}</h3>
+                        <span class="product-category">${product.category}</span>
+                    </div>
+                    <p class="product-description">${product.description}</p>
+                    
+                    <button class="expand-toggle" onclick="toggleProductDetails(this)">
+                        <span class="expand-text">View Details & Pricing</span>
+                        <span class="expand-icon">▼</span>
+                    </button>
+                    
+                    <div class="product-details collapsed">
+                        <div class="product-sizes">
+                            <label for="size-select-${product.name.replace(/\s+/g, '-')}">Available Sizes:</label>
+                            <select class="size-selector" id="size-select-${product.name.replace(/\s+/g, '-')}" onchange="updateProductPrice(this, '${product.name}')">
+                                ${sizeOptions}
+                            </select>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-label">Price:</span>
+                                <span class="price" id="price-${product.name.replace(/\s+/g, '-')}">${selectedSize.price}</span>
+                            </div>
+                            <a href="contacts.html" class="btn btn-professional btn-sm">
+                                🛒 Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        // Update product price when size is changed (make it global)
+        window.updateProductPrice = function(selectElement, productName) {
+            console.log('updateProductPrice called:', productName, selectElement.value);
+            
+            try {
+                const selectedIndex = parseInt(selectElement.value);
+                const product = productData[productName];
+                
+                if (!product) {
+                    console.error('Product not found:', productName);
+                    return;
+                }
+                
+                const selectedSize = product.sizes[selectedIndex];
+                
+                if (!selectedSize) {
+                    console.error('Size not found:', selectedIndex, product.sizes);
+                    return;
+                }
+                
+                console.log('Selected size:', selectedSize);
+                
+                // Find the price element in the same card as the select element
+                const card = selectElement.closest('.product-card');
+                const priceElement = card ? card.querySelector('.price') : null;
+                
+                if (priceElement) {
+                    // Add visual feedback
+                    priceElement.classList.add('updating');
+                    priceElement.textContent = selectedSize.price;
+                    
+                    // Remove the animation class after a short delay
+                    setTimeout(() => {
+                        priceElement.classList.remove('updating');
+                    }, 300);
+                    
+                    console.log('Updated price to:', selectedSize.price);
+                } else {
+                    console.error('Price element not found in card');
+                }
+                
+                // Also update all other instances of the same product (for potential clones)
+                const productId = productName.replace(/\s+/g, '-');
+                document.querySelectorAll(`.product-card`).forEach(otherCard => {
+                    const otherProductName = otherCard.querySelector('h3')?.textContent;
+                    if (otherProductName === productName) {
+                        const otherPriceElement = otherCard.querySelector('.price');
+                        const otherSelector = otherCard.querySelector('.size-selector');
+                        
+                        if (otherPriceElement && otherPriceElement !== priceElement) {
+                            otherPriceElement.classList.add('updating');
+                            otherPriceElement.textContent = selectedSize.price;
+                            setTimeout(() => {
+                                otherPriceElement.classList.remove('updating');
+                            }, 300);
+                        }
+                        
+                        if (otherSelector && otherSelector !== selectElement) {
+                            otherSelector.value = selectedIndex;
+                        }
+                    }
+                });
+                
+            } catch (error) {
+                console.error('Error updating product price:', error);
+            }
+        };
+        
+        // Toggle product details expansion
+        window.toggleProductDetails = function(button) {
+            const card = button.closest('.product-card');
+            const details = card.querySelector('.product-details');
+            const icon = button.querySelector('.expand-icon');
+            const text = button.querySelector('.expand-text');
+            
+            if (details.classList.contains('collapsed')) {
+                // Expand
+                details.classList.remove('collapsed');
+                details.classList.add('expanded');
+                icon.textContent = '▲'; // Up arrow
+                text.textContent = 'Hide Details';
+            } else {
+                // Collapse
+                details.classList.remove('expanded');
+                details.classList.add('collapsed');
+                icon.textContent = '▼'; // Down arrow
+                text.textContent = 'View Details & Pricing';
+            }
+        };
+        
+        // Auto-collapse product details when cursor leaves card
+        window.collapseProductDetails = function(card) {
+            const details = card.querySelector('.product-details');
+            const icon = card.querySelector('.expand-icon');
+            const text = card.querySelector('.expand-text');
+            
+            if (details && details.classList.contains('expanded')) {
+                // Collapse
+                details.classList.remove('expanded');
+                details.classList.add('collapsed');
+                if (icon) icon.textContent = '▼'; // Down arrow
+                if (text) text.textContent = 'View Details & Pricing';
+            }
+        };
+        
+        // Add hover event listeners to all product cards
+        function addHoverListeners() {
+            document.querySelectorAll('.product-card').forEach(card => {
+                // Remove existing listeners to prevent duplicates
+                if (card.mouseEnterHandler) {
+                    card.removeEventListener('mouseenter', card.mouseEnterHandler);
+                }
+                if (card.mouseLeaveHandler) {
+                    card.removeEventListener('mouseleave', card.mouseLeaveHandler);
+                }
+                
+                // Clear timeout on mouse enter
+                card.mouseEnterHandler = function() {
+                    if (card.collapseTimeout) {
+                        clearTimeout(card.collapseTimeout);
+                        card.collapseTimeout = null;
+                    }
+                };
+                
+                // Auto-collapse on mouse leave
+                card.mouseLeaveHandler = function() {
+                    // Always auto-collapse expanded details when leaving the card
+                    const details = card.querySelector('.product-details');
+                    if (details && details.classList.contains('expanded')) {
+                        card.collapseTimeout = setTimeout(() => {
+                            collapseProductDetails(card);
+                        }, 300);
+                    }
+                };
+                
+                // Add listeners
+                card.addEventListener('mouseenter', card.mouseEnterHandler);
+                card.addEventListener('mouseleave', card.mouseLeaveHandler);
+            });
+        }
+        
+        // Enhanced Carousel with infinite loop
+        class ProductCarousel {
+            constructor() {
+                this.track = document.getElementById('carouselTrack');
+                this.container = document.getElementById('carouselContainer');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.dotsContainer = document.getElementById('carouselDots');
+                this.currentIndex = 0;
+                this.slidesPerView = this.getSlidesPerView();
+                this.isTransitioning = false;
+                this.autoPlayInterval = null;
+                this.slideWidth = 0;
+                
+                this.init();
+            }
+            
+            init() {
+                this.originalSlides = Array.from(this.track.querySelectorAll('.carousel-slide'));
+                this.totalSlides = this.originalSlides.length;
+                this.createInfiniteLoop();
+                this.calculateDimensions();
+                this.createDots();
+                this.bindEvents();
+                this.updateCarousel();
+                this.startAutoPlay();
+                
+                // Window resize handler
+                this.resizeHandler = () => {
+                    const newSlidesPerView = this.getSlidesPerView();
+                    if (newSlidesPerView !== this.slidesPerView) {
+                        this.slidesPerView = newSlidesPerView;
+                        this.createInfiniteLoop();
+                        this.calculateDimensions();
+                        this.updateCarousel();
+                    }
+                };
+                window.addEventListener('resize', this.resizeHandler);
+            }
+            
+            createInfiniteLoop() {
+                // Clear the track first
+                this.track.innerHTML = '';
+                
+                // Create enough clones to fill the view and allow smooth infinite scrolling
+                const clonesNeeded = Math.max(this.slidesPerView * 2, this.originalSlides.length);
+                const allSlides = [];
+                
+                // Create multiple sets of slides for smooth infinite effect
+                for (let set = 0; set < 3; set++) {
+                    this.originalSlides.forEach((originalSlide, index) => {
+                        const clone = originalSlide.cloneNode(true);
+                        
+                        // Preserve the functionality by re-binding events
+                        const selector = clone.querySelector('.size-selector');
+                        const toggleButton = clone.querySelector('.expand-toggle');
+                        
+                        if (selector) {
+                            const productName = this.originalSlides[index].querySelector('h3').textContent;
+                            selector.onchange = function() {
+                                window.updateProductPrice(this, productName);
+                            };
+                        }
+                        
+                        if (toggleButton) {
+                            toggleButton.onclick = function() {
+                                window.toggleProductDetails(this);
+                            };
+                        }
+                        
+                        // Add hover listeners for auto-collapse
+                        clone.mouseEnterHandler = function() {
+                            if (clone.collapseTimeout) {
+                                clearTimeout(clone.collapseTimeout);
+                                clone.collapseTimeout = null;
+                            }
+                        };
+                        
+                        clone.mouseLeaveHandler = function() {
+                            // Always auto-collapse expanded details when leaving the card
+                            const details = clone.querySelector('.product-details');
+                            if (details && details.classList.contains('expanded')) {
+                                clone.collapseTimeout = setTimeout(() => {
+                                    window.collapseProductDetails(clone);
+                                }, 300);
+                            }
+                        };
+                        
+                        clone.addEventListener('mouseenter', clone.mouseEnterHandler);
+                        clone.addEventListener('mouseleave', clone.mouseLeaveHandler);
+                        
+                        clone.classList.add(`clone-set-${set}`);
+                        if (set === 1) clone.classList.add('original-set');
+                        
+                        this.track.appendChild(clone);
+                        allSlides.push(clone);
+                    });
+                }
+                
+                this.allSlides = allSlides;
+                this.currentIndex = this.originalSlides.length; // Start at the middle set
+            }
+            
+            
+            getSlidesPerView() {
+                const width = window.innerWidth;
+                if (width < 768) return 1;
+                if (width < 1024) return 2;
+                return 3;
+            }
+            
+            calculateDimensions() {
+                const containerWidth = this.container.offsetWidth;
+                const gap = 24;
+                this.slideWidth = (containerWidth - (gap * (this.slidesPerView - 1))) / this.slidesPerView;
+                
+                // Set slide widths for all slides (including clones)
+                const allSlidesInTrack = this.track.querySelectorAll('.carousel-slide');
+                allSlidesInTrack.forEach(slide => {
+                    slide.style.minWidth = `${this.slideWidth}px`;
+                    slide.style.flex = `0 0 ${this.slideWidth}px`;
+                });
+            }
+            
+            createDots() {
+                this.dotsContainer.innerHTML = '';
+                
+                for (let i = 0; i < this.totalSlides; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
+                    dot.addEventListener('click', () => this.goToSlide(i));
+                    this.dotsContainer.appendChild(dot);
+                }
+            }
+            
+            bindEvents() {
+                this.prevBtn.addEventListener('click', () => this.prevSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+                
+                // Touch events for mobile swipe
+                let startX = 0;
+                let currentX = 0;
+                let isDragging = false;
+                
+                this.track.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    this.stopAutoPlay();
+                }, { passive: true });
+                
+                this.track.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    currentX = e.touches[0].clientX;
+                    const diff = startX - currentX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            this.nextSlide();
+                        } else {
+                            this.prevSlide();
+                        }
+                        isDragging = false;
+                    }
+                }, { passive: true });
+                
+                this.track.addEventListener('touchend', () => {
+                    isDragging = false;
+                    this.startAutoPlay();
+                }, { passive: true });
+                
+                // Pause autoplay on hover (desktop only)
+                if (window.innerWidth >= 1024) {
+                    this.container.addEventListener('mouseenter', () => this.stopAutoPlay());
+                    this.container.addEventListener('mouseleave', () => this.startAutoPlay());
+                }
+            }
+            
+            prevSlide() {
+                if (this.isTransitioning) return;
+                this.currentIndex--;
+                this.updateCarousel();
+            }
+            
+            nextSlide() {
+                if (this.isTransitioning) return;
+                this.currentIndex++;
+                this.updateCarousel();
+            }
+            
+            goToSlide(index) {
+                if (this.isTransitioning) return;
+                // Go to the middle set version of the requested slide
+                this.currentIndex = this.originalSlides.length + index;
+                this.updateCarousel();
+            }
+            
+            updateCarousel() {
+                this.isTransitioning = true;
+                
+                const totalSlides = this.originalSlides.length * 3; // 3 sets of slides
+                const translateX = -(this.currentIndex * (this.slideWidth + 24));
+                
+                this.track.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                this.track.style.transform = `translateX(${translateX}px)`;
+                
+                // Handle infinite loop reset
+                setTimeout(() => {
+                    // If we're at the end of the last set, jump to the beginning of the middle set
+                    if (this.currentIndex >= this.originalSlides.length * 2) {
+                        this.currentIndex = this.currentIndex - this.originalSlides.length;
+                        this.track.style.transition = 'none';
+                        const newTranslateX = -(this.currentIndex * (this.slideWidth + 24));
+                        this.track.style.transform = `translateX(${newTranslateX}px)`;
+                    }
+                    // If we're at the beginning of the first set, jump to the end of the middle set
+                    else if (this.currentIndex < this.originalSlides.length) {
+                        this.currentIndex = this.currentIndex + this.originalSlides.length;
+                        this.track.style.transition = 'none';
+                        const newTranslateX = -(this.currentIndex * (this.slideWidth + 24));
+                        this.track.style.transform = `translateX(${newTranslateX}px)`;
+                    }
+                    
+                    this.isTransitioning = false;
+                }, 500);
+                
+                // Update dots based on the actual slide position (middle set)
+                const dots = this.dotsContainer.querySelectorAll('.carousel-dot');
+                const realIndex = (this.currentIndex - this.originalSlides.length) % this.originalSlides.length;
+                const displayIndex = realIndex < 0 ? realIndex + this.originalSlides.length : realIndex;
+                
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === displayIndex);
+                });
+            }
+            
+            startAutoPlay() {
+                this.stopAutoPlay();
+                if (window.innerWidth >= 1024) {
+                    this.autoPlayInterval = setInterval(() => {
+                        this.nextSlide();
+                    }, 4000);
+                }
+            }
+            
+            stopAutoPlay() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            }
+            
+            destroy() {
+                this.stopAutoPlay();
+                if (this.resizeHandler) {
+                    window.removeEventListener('resize', this.resizeHandler);
+                }
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProducts();
+            addHoverListeners(); // Add hover listeners to initial cards
+            carousel = new ProductCarousel();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Krypt Investments - Get Your Cleaning & Hygiene Products Quote</title>
+    <meta name="description" content="Contact Krypt Investments for quality cleaning and hygiene products. Get quotes, ask questions, or place orders. Phone, email, and WhatsApp support available.">
+    <link rel="icon" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="/pictures/Krypt logo.png" alt="Krypt Investments" class="logo-icon" style="height: 40px; width: auto;">
+                    <span class="logo-text">Krypt Investments</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="contacts.html" class="nav-link active">Contacts</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="contact-info">
+                        <span>📞 <a href="tel:+256772316316">+256 772 316 316</a></span>
+                    </div>
+                    <a href="contacts.html" class="btn btn-professional">Get Quote</a>
+                </div>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contacts.html" class="nav-link active">Contacts</a>
+                <div class="mobile-contact">
+                    <p>📞 <a href="tel:+256772316316">+256 772 316 316</a></p>
+                    <p>✉️ <a href="mailto:kryptinvestmentsltd@gmail.com">kryptinvestmentsltd@gmail.com</a></p>
+                    <a href="contacts.html" class="btn btn-professional">Get Quote</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Contact Us</h1>
+                    <p class="hero-description">
+                        Ready to get started? We're here to help with all your cleaning and hygiene product needs. 
+                        Get in touch today for personalized service and competitive pricing.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/256772316316" target="_blank" class="btn btn-hero">
+                            💬 WhatsApp Now
+                        </a>
+                        <a href="tel:+256772316316" class="btn btn-outline">
+                            📞 Call Us Now
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" style="height: 350px;">
+                    <img src="/pictures/cover photo.jpg" alt="Contact Us Today" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p class="section-description">
+                    Multiple ways to reach us - choose what works best for you
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h4>Call Us</h4>
+                    <div class="contact-details">
+                        <p><strong><a href="tel:+256772316316">+256 772 316 316</a></strong></p>
+                        <p><strong><a href="tel:+256777726363">+256 777 726 363</a></strong></p>
+                    </div>
+                    <p class="contact-note">Monday - Saturday, 8:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h4>Email Us</h4>
+                    <div class="contact-details">
+                        <p><strong><a href="mailto:kryptinvestmentsltd@gmail.com">kryptinvestmentsltd@gmail.com</a></strong></p>
+                    </div>
+                    <p class="contact-note">We'll respond within 24 hours</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h4>Visit Us</h4>
+                    <div class="contact-details">
+                        <p><strong>Kampala, Uganda</strong></p>
+                    </div>
+                    <p class="contact-note">By appointment only</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h4>Business Hours</h4>
+                    <div class="contact-details">
+                        <p><strong>Mon - Fri: 8:00 AM - 6:00 PM</strong></p>
+                        <p><strong>Sat: 9:00 AM - 4:00 PM</strong></p>
+                    </div>
+                    <p class="contact-note">Closed on Sundays</p>
+                </div>
+            </div>
+
+            <!-- Contact Form & Map -->
+            <div class="form-section">
+                <div class="form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+256 772 316 316">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your requirements..." rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-professional">
+                            📤 Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Map & Location -->
+                <div class="map-container">
+                    <h3>Our Location</h3>
+                    <div class="map-placeholder">
+                        <p>Google Maps Embed Space</p>
+                    </div>
+                    <div class="location-info">
+                        <p><strong>Krypt Investments</strong></p>
+                        <p>Kampala, Uganda<br>Available by appointment</p>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h4>Quick Actions</h4>
+                        <div class="action-buttons">
+                            <a href="https://wa.me/256772316316" target="_blank" class="action-btn">
+                                💬 WhatsApp Chat
+                            </a>
+                            <a href="tel:+256772316316" class="action-btn">
+                                📞 Call Now
+                            </a>
+                            <a href="mailto:kryptinvestmentsltd@gmail.com" class="action-btn">
+                                ✉️ Send Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-description">
+                    Find answers to common questions about our products and services
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is your minimum order quantity?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our minimum order quantities vary by product. For most cleaning products, we accept orders starting from 10 units. For bulk orders, we offer special pricing. Contact us for specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Do you offer delivery services?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide delivery services within Kampala and surrounding areas. For orders outside Kampala, we work with trusted courier services to ensure safe delivery of your products.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Are your products certified?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All our products meet international quality standards and are certified by relevant authorities. We can provide certification documents upon request for institutional purchases.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Do you offer bulk pricing?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer competitive bulk pricing for large orders. The more you order, the better the pricing. Contact us with your requirements for a customized quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What payment methods do you accept?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept cash, bank transfers, mobile money (MTN Mobile Money, Airtel Money), and for established customers, we offer credit terms. All major payment methods are supported.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How long is your delivery time?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For in-stock items within Kampala, delivery is typically 1-2 business days. For other areas in Uganda, delivery takes 3-5 business days. Custom orders may take longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">K</div>
+                        <span>Krypt Investments</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for high-quality cleaning and hygiene products. 
+                        Professional solutions for everyday use.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573217287349" target="_blank">📘</a>
+                        <a href="https://www.instagram.com/kryptlttd/" target="_blank">📷</a>
+                        <a href="https://wa.me/256772316316" target="_blank">💬</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <nav class="footer-nav">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contacts.html">Contacts</a>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Products</h3>
+                    <div class="footer-products">
+                        <span>Chlorohexidine</span>
+                        <span>Bleach</span>
+                        <span>Tile Cleaner</span>
+                        <span>Spirit</span>
+                        <span>Calamine</span>
+                        <span>Liquid Soap</span>
+                        <span>Hand Wash</span>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <p>Call Us</p>
+                                <p><strong><a href="tel:+256772316316">+256 772 316 316</a></strong></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <p>Email</p>
+                                <p><strong><a href="mailto:kryptinvestmentsltd@gmail.com">kryptinvestmentsltd@gmail.com</a></strong></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p>Location</p>
+                                <p><strong>Kampala, Uganda</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Krypt Investments. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
